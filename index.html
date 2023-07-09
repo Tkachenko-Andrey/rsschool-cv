@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tkachenko Andrey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header class="page-header">
+            <nav class="page-nav">
+                <a class="page-nav-link" href="#about-me">About me</a>
+                <a class="page-nav-link" href="#skills">Skills</a>
+                <a class="page-nav-link" href="#my-code">Code example</a>
+                <a class="page-nav-link" href="#education">Education</a>
+                <a class="page-nav-link" href="#experience">Experience</a>
+                <a class="page-nav-link" href="#languages">Languages</a>
+                <a class="page-nav-link" href="#my-projects">My projects</a>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <section class="cover-wrapper">
+            <div class="cover-heading-wrapper">
+                <h1>Andrey Tkachenko</h1>
+                <ul class="unordered-list">
+                    <li class="contacts-item">
+                        <p class="is__bold-text">Email</p>
+                        <a href="mailto:andrew.n.tkachenko@gmail.com" >andrew.n.tkachenko@gmail.com</a>
+                    </li>
+                    <li class="contacts-item">
+                        <p class="is__bold-text">Phone</p>
+                        <a href="tel:+79967047747">+79967047747</a>
+                    </li>
+                    <li class="contacts-item">
+                        <p class="is__bold-text">Telegram</p>
+                        <a href="https://t.me/n_e_k_k_i" target="_blank">@n_e_k_k_i</a>
+                    </li>
+                    <li class="contacts-item">
+                        <p class="is__bold-text">Github</p>
+                        <a href="https://github.com/Tkachenko-Andrey" target="_blank">@Tkachenko-Andrey</a>
+                    </li>
+                </ul>
+            </div>
+            <img class="cover-image" src="./img/avatar.jpeg" alt="CV avatar">
+        </section>   
+
+        <section class="about" id="about-me">
+            <h2>About me</h2>
+            <p class="main-text">My name is Andrey, I’m a webflow developer with 3 years of experience. He came to development from web design and worked with general studios and agencies such as Clay, Uprock, Pinkman (Method Zero), Cedro, Cloudmill, Accuraten, HTML Academy, etc., in total, independently launched more than 40 projects varying degrees of complexity, from simple landings and corporate sites to promo sites with animations and interaction logic. I work with BEM I prefer to typeset in rem for better adaptability I use swiper in my work. js, a bit of gsap, if necessary I can add locomotive js, but lenis scroll as smooth scroll is more flexible and loads pages less. I work with lotti files and integrations such as zapier, make, mailchimp familiar with the features of cross-browser layout not afraid of difficult tasks I like to learn and use something new in my work I take criticism calmly and I’m not afraid to talk about what I don’t know</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="unordered-list">
+                <li class="is__bold-text" >Webflow</li>
+                <li>HTML/CSS</li>
+                <li>BEM</li>
+                <li>GSAP</li>
+                <li>Zapier, Make</li>
+                <li>Locomotive scroll, Lenis scroll, Swiper JS</li>
+            </ul>
+        </section>
+
+        <section id="Experience">
+            <h2>Experience</h2>
+            <p class="is__bold-text size-big">Middle+ Webflow developer (3 years)</p>
+            <ul class="unordered-list">
+                <li>Uprock Agency</li>
+                <li>Method Zero</li>
+                <li>StudyWorld</li>
+                <li>Freelance</li>
+            </ul>
+        </section>
+
+        <section id="my-code">
+            <h2>Code example</h2>
+            <pre class="code-wrapper">
+            document.addEventListener('DOMContentLoaded', () => {
+             document.querySelectorAll('#header_trigger').forEach(trigger => { 
+                new IntersectionObserver((entries, observer) => { 
+                 entries.forEach(entry => {
+                 if(entry.isIntersecting){
+                     document.querySelectorAll('.navbar__layout.is__before-loading').forEach(target => target.classList.remove('is__before-loading'));
+                     }
+                    else{
+                     document.querySelectorAll('.navbar__layout').forEach(target => target.classList.add('is__before-loading'));
+                     }
+                      });
+                  },
+                 { 
+                      threshold: 0.048 
+                 }).observe(trigger);
+              });
+            });
+            </pre>
+        </section>
+
+        <section id="education">
+            <h2>Languages</h2>
+            <p class="is__bold-text size-big">Master of History</p>
+        </section>
+
+        <section id="languages">
+            <h2>Education</h2>
+            <ul class="unordered-list">
+                <li>Russian</li>
+                <li>English -A2</li>
+            </ul>
+        </section>
+
+        <section id="my-projects">
+            <h2>My projects</h2>
+            <div class="projects-list">
+                <div class="project-item">
+                    <a href="https://www.coreplus.ru/" target="_blank">
+                        <img class="project-preview" src="./img/core cover image.svg" alt="Core project preview image">
+                        <p>Core+</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="https://www.yggy.ai/" target="_blank">
+                        <img class="project-preview" src="./img/lyag cover image.jpg" alt="Yggy project preview image">
+                        <p>Yggy Ai</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="https://www.lyag.ru/" target="_blank">
+                        <img class="project-preview" src="./img/yggy cover image.jpg" alt="Lyag project preview image">
+                        <p>Lyag</p>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="https://www.uprock.pro/" target="_blank">
+                        <img class="project-preview" src="./img/uprock cover image.jpg" alt="Uprock project preview image">
+                        <p>Uprock Agency</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+          
+        <footer class="footer-page">
+            <a href="https://rs.school/js/" target="_blank">
+                <img class="school-logo" src="https://rs.school/images/rs_school_js.svg" alt="rs school logo">
+            </a>
+            <a class="is__bold-text" href="https://github.com/Tkachenko-Andrey" target="_blank">My Github</a>
+            <p>2023</p>
+        </footer>
+    </main>
+</body>
+</html>
+
+
