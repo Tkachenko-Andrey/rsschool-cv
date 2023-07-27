@@ -10,7 +10,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="style.css">    
-    <script src="index.js"></script>
+    <script type="text/javascript">
+        console.log('text')
+    </script>
 </head>
 <body>
     <header class="is__header-page">
@@ -118,14 +120,14 @@
                                     <div>
                                         <h3>Staff Picks</h3>
                                         <div class="favorites__book-card-divider"></div>
-                                        <p class="is__text-size-small is__text-weight-bold"><span class="is__text-uppercase">The Book Eaters</span><br><br> Sunyi Dean</p>
+                                        <p class="is__text-size-small is__text-weight-bold"><span class="is__text-uppercase">The Book Eaters</span><br><br> By Sunyi Dean</p>
                                         <p class="is__text-size-small is__book-card-description">An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.       
                                         </p>
                                     </div>
                                     <button class="favorites__book-card-button">Buy</button>
                                     <img class="favorites__book-card-image" src="./img/library-image-05.jpg" alt="book cover">
                                 </div>
-                                <div class="favorites__book-card">
+                                <div class="favorites__book-card is__justify-end">
                                     <div>  
                                         <h3>Staff Picks</h3>
                                         <div class="favorites__book-card-divider"></div>
@@ -146,7 +148,7 @@
                                     <button class="favorites__book-card-button">Buy</button>
                                     <img class="favorites__book-card-image" src="./img/library-image-07.jpg" alt="book cover">
                                 </div>
-                                <div class="favorites__book-card">
+                                <div class="favorites__book-card is__justify-end">
                                     <div>
                                         <h3>Staff Picks</h3>
                                         <div class="favorites__book-card-divider"></div>
@@ -165,11 +167,11 @@
                 <section class="is__default-section" id="cofee-shop">
                     <div class="is__section-container">
                         <div class="is__heading-wrapper">
-                            <h2>Coffee shop</h2>
+                            <h2>Coffee Shop</h2>
                             <div class="is__heading-divider"></div>
                         </div>
                         <div class="is__section-description-wrapper">
-                            <p class="is__section-description"> In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
+                            <p class="is__section-description is__letter-spacing"> In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly conversation. 
                                 you can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and also you can try desserts from bakery. </p>
                         </div>
                         <div class="coffee__menu-wrapper">
@@ -296,7 +298,7 @@
                                 <p class="is__text-big">Find your Library card</p>
                                 <form class="library__card-form" id="library-card__form" action="">
                                     <div class="library-card__inputs-layout">
-                                        <p>Brooklyn Public Library</p>
+                                        <p class="library__form-heading"> Brooklyn Public Library</p>
                                         <div class="library-card__inputs-wrapper">
                                             <input class="library-card__input" placeholder="Reader's name" type="text">
                                             <input class="library-card__input" placeholder="Card number" type="text" min="10">
@@ -311,8 +313,8 @@
                                 <p class="is__text-big is__text-font-forum">Get a reader card</p>
                                 <p class="library-card__description">You will be able to see a reader card after logging into account or you can register a new account</p>
                                 <div class="library-card__buttons-wrapper">
-                                    <button class="favorites__book-card-button">Sign Up</button>
-                                    <button class="favorites__book-card-button">Log in</button>
+                                    <button class="library-button">Sign Up</button>
+                                    <button class="library-button">Log in</button>
                                 </div>
                             </div>
                         </div>
