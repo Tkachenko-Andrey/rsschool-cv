@@ -129,6 +129,7 @@ li {
 .welcome__background-image-wrapper {
     object-fit: cover;
     position: absolute;
+    overflow: hidden;
     z-index: 0;
     top: 0%;
     bottom: 0%;
